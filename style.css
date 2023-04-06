@@ -1,0 +1,111 @@
+/* Body Styles */
+body {
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 10px 20px;
+    color: white;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  .header h1 {
+    margin: 0;
+    font-size: 36px;
+  }
+  
+  .new-game-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+  }
+  
+  .new-game-button:hover {
+    background-color: #ddd;
+  }
+  
+  .board {
+    display: flex;
+    flex-wrap: wrap;
+    width: 300px;
+    margin: 100px auto 0 auto;
+    border: 1px solid white;
+  }
+  
+  .square {
+    box-sizing: border-box;
+    width: 98px;
+    height: 98px;
+    margin: 0;
+    border: 1px solid white;
+    font-size: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  .square:hover {
+    background-color: #222;
+  }
+  
+  .square.x {
+    color: blue;
+  }
+  
+  .square.o {
+    color: red;
+  }
+  
+  
+  .message {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 40px;
+    color: white;
+  }
+  
+  .message.x-wins {
+    color: blue;
+  }
+  
+  .message.o-wins {
+    color: red;
+  }
+  
+  
+  .reset-button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 24px;
+    background-color: white;
+    border: 2px solid black;
+    cursor: pointer;
+  }
+  
+  .reset-button:hover {
+    background-color: #eee;
+  }
+  
